@@ -1,4 +1,4 @@
 # Config Backups for Ubuntu
 
-# Config Path
+## Config Path
 ~/.config

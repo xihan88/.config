@@ -1,0 +1,16 @@
+# set the global path below
+export GOROOT=$HOME/projects/environment/go
+export GOPATH=$HOME/projects/works/go
+export GOPRIVATE="gitlab.miaoyun.net.cn,miaoyun.io/*"
+export CHIWEN=$GOPATH/src/chiwen.io
+export PATH=$GOROOT/bin:$GOPATH/bin:$CHIWEN/bin:$CHIWEN/bin:$PATH
+
+alias dm="docker-machine"
+
+, () {
+  ssh -Y root@10.10.1.$1
+}
+
+,, () {
+  ssh -Y xihan@192.168.1.$1
+}
